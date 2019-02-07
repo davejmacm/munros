@@ -1,6 +1,6 @@
 const RequestHelper = function (url) {
-  this.url = url
-}
+  this.url = url;
+};
 
 // RequestHelper.prototype.get = function (onComplete) {
 //   const xhr = new XMLHttpRequest();
@@ -15,7 +15,7 @@ const RequestHelper = function (url) {
 //   xhr.send();
 // };
 
-Request.prototype.get = function () {
+RequestHelper.prototype.get = function () {
   return fetch(this.url)
   .then((response) => response.json());
 };

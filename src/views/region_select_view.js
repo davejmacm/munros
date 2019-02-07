@@ -23,9 +23,10 @@ RegionSelectView.prototype.bindEvents = function () {
 RegionSelectView.prototype.populate = function (allRegions) {
   allRegions.forEach((region, index) => {
       const option = document.createElement('option');
+      console.log("Option is: ", option);
       option.textContent = region.name;
       option.value = index;
-      this.element.appendChild(option);
+      this.formElement.appendChild(option);
   });
 };
 

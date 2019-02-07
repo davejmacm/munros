@@ -8,12 +8,13 @@ const Region = function () {
 Region.prototype.bindEvents = function () {
   PubSub.subscribe('RegionSelectView:change', (evt) => {
       const regionName = evt.detail;
-      this.getData(regionName);
+      // this.getData(regionName);
   });
 };
 
 Region.prototype.getData = function (regionName) {
-  const url = `https://munroapi.herokuapp.com/munros/region/${regionName}`;
+  const url = 'https://munroapi.herokuapp.com/munros/';
+  console.log(url);
   const request_helper = new RequestHelper(url);
   request_helper.get()
     .then((region)=> {
