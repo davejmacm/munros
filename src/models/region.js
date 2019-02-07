@@ -6,7 +6,7 @@ const Region = function () {
 };
 
 Region.prototype.bindEvents = function () {
-  PubSub.subscribe('RegionSelectView:region-ready', (evt) => {
+  PubSub.subscribe('RegionSelectView:change', (evt) => {
       const regionName = evt.detail;
       this.getData(regionName);
   });
