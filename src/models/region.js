@@ -26,4 +26,14 @@ Region.prototype.getData = function (regionName) {
     });
 };
 
+Region.prototype.getRegionName = function (munros) {
+  return munros
+  .map(munro => munro.region)
+  .filter((region, index, regions) => regions.indexOf(region) === index);
+};
+
+// Region.prototype.handleDataReady = function (regions) {
+//   const
+// }
+
 module.exports = Region;

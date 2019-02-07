@@ -1,0 +1,26 @@
+body {
+  font-family: munros;
+  background-image: url('./munro_back.jpg');
+
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+#region {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.munro {
+
+  justify-content: center;
+}
+
+li {
+  list-style-type: none;
+}

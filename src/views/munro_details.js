@@ -28,10 +28,12 @@ MunroDetails.prototype.createMunroList = function () {
 
   const munroListItemMeaning = document.createElement('li');
   munroListItemMeaning.textContent = this.munro.meaning;
-  munrosList.appendChild(munroListItemMeaning);
+
 
   const munroListItemHeight = document.createElement('li');
-  munroListItemHeight.texContent = this.munro.height;
+  munroListItemHeight.textContent = this.munro.height;
+
+  munrosList.appendChild(munroListItemMeaning);
   munrosList.appendChild(munroListItemHeight);
 
   return munrosList;
